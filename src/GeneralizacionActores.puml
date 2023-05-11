@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+actor :Cliente:
+actor :ClienteVIP: as VIP
+
+
+:Cliente: <|-- VIP
+:Cliente: -- (Reservar vuelo)
+VIP -- (Elegir asiento)
+@enduml
