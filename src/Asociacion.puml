@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+:Cliente: -- (Mostrar menú)
+:Cliente: -- (Pedir comida)
+:Restaurante: -- (Pedir comida)
+:Restaurante: -- (Entregar comida)
+
+@enduml
