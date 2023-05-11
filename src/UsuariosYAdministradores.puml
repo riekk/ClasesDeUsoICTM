@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+:Usuario: <|-- :Administrador:
+:Usuario: -- (Iniciar sesion)
+:Usuario: -- (Recuperar contraseña)
+:Usuario: -- (Modificar contraseña)
+:Usuario: -- (Cerrar sesión)
+:Administrador: -- (Registrar usuario)
+:Administrador: -- (Instala programa)
+
+@enduml
