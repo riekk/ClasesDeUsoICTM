@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+rectangle {
+    usecase (Pedir comida) as PC
+    usecase (Mostrar menú) as MM
+}
+
+:Cliente: -- MM
+:Cliente: -- PC
+:Restaurante: -- MM
+:Restaurante: -- (Entregar comida)
+
+@enduml
