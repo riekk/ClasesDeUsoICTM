@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+:Cliente: -- (Meter dinero)
+:Cliente: -- (Pedir azúcar)
+:Cliente: -- (Pedir producto)
+:Cliente: -- (Cancelar)
+
+(Pedir producto) ..> (Devolver dinero) : <<include>>
+(Cancelar) ..> (Devolver dinero) : <<include>>
+@enduml
