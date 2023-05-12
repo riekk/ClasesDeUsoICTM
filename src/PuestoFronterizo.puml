@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor :Ciudadano: as ci
+actor :Ciudadano Extranjero: as ext
+
+ci <|-- ext
+ci -- (Registrar entrada)
+ext -- (Tomar huellas)
+(Registrar entrada) <|.. (Tomar huellas) : <<extends>>
+
+@enduml
